@@ -5,7 +5,7 @@
  * @copyright   ©Yachtmee
  *
  * @description
- *      Euro foreign exchange reference rates
+ *      Fetch Euro foreign exchange reference rates into Javascript Map
  *      https://fr.wikipedia.org/wiki/ISO_4217
  *
  * @version     1.0.0
@@ -111,7 +111,7 @@ function parseEcb( str: string ): EcbCollection {
   // return defMap;
 }
 
-class Ecb {
+export default class Ecb {
 
   public static async fetchdatas(): Promise<EcbCollection> {
 
