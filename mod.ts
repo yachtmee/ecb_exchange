@@ -1,6 +1,6 @@
 /**
- * @module      ecb-exchange
- * @author      Created by Jean-François TANGUY <jf.tanguy@yachtmee.com> on 26/05/19.
+ * @module      ecb_exchange
+ * @author      Created by nestor <nestor@yachtmee.com> on 26/05/19.
  * @link        https://yachtmee.com
  * @copyright   ©Yachtmee
  *
@@ -8,7 +8,7 @@
  *      Fetch Euro foreign exchange reference rates into Javascript Map
  *      https://fr.wikipedia.org/wiki/ISO_4217
  *
- * @version     1.0.0
+ * @version     1.0.1
  */
 
 import { mapc } from "./currencies.ts";

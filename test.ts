@@ -2,7 +2,7 @@ import { Ecb } from "./mod.ts";
 import myecb from "./mod.ts";
 
 import { mapc } from "./currencies.ts";
-import { assert } from "https://deno.land/std@0.70.0/testing/asserts.ts";
+import { assert } from "https://deno.land/std@0.71.0/testing/asserts.ts";
 
 Deno.test("#Class Ecb", async () => {
   let r = await Ecb.fetchdatas();

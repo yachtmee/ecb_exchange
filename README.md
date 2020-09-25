@@ -13,14 +13,14 @@ Copyright: © 2020, yachtmee
 
 Date: 2020-09-20
 
-Version: 1.0.0
+Version: 1.0.1
 
 ## About
 The reference rates are usually updated around 16:00 CET on every working day, except on TARGET closing days. They are based on a regular daily concertation procedure between central banks across Europe, which normally takes place at 14:15 CET. 
 
 ## Usage
 
-import ECB-EXCHANGE deno lib and use it:
+import ECB_EXCHANGE deno lib and use it:
 
 Local Import
 ```typescript
@@ -32,10 +32,20 @@ Local Import
 
 Github Import
 ```typescript
-  import { Ecb } from "https://raw.githubusercontent.com/yachtmee/ecb-exchange/master/mod.ts";
+  import { Ecb } from "https://raw.githubusercontent.com/yachtmee/ecb_exchange/master/mod.ts";
   let currencies = await Ecb.fetchdatas();
   // console.log(currencies);
   // 
-  console.log(currencies.get(''))
+  console.log(currencies.get('BRL'))
+  console.log(currencies);
+```
+
+deno.land Import
+```typescript
+  import { Ecb } from "https://deno.land/x/ecb_exchange@1.0.1/mod.ts";
+  let currencies = await Ecb.fetchdatas();
+  console.log(currencies);
+  // return map of curencies 
+  console.log(currencies.get('CAD'))
   console.log(currencies);
 ```
